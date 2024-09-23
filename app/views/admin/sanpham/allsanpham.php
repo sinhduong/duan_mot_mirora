@@ -18,6 +18,10 @@
                 <th scope="col">Mô Tả</th>
                 <th scope="col">Hình ảnh</th>
                 <th scope="col">Mặt hàng</th>
+                <th scope="col">Màu sắc</th>
+                <th scope="col">Kích thước</th>
+                <th scope="col">Chất liệu</th>
+                <th scope="col">Khuyến mãi</th>
                 <th scope="col">Thao tác</th>
             </tr>
         </thead>
@@ -29,15 +33,31 @@
             ?>
                 <tr>
                     <th scope="row"><?= $id_sp ?></th>
-                    <td><a href="index.php?act=allctsanpham"><?= $name_sp ?></a></td>
+                    <td><a href="index.php?act=allctsanpham&iddm=<?= $id_dm ?>"><?= $name_sp ?></a></td>
                     <td><?= $gia ?></td>
                     <td><?= $gia_giam ?></td>
                     <td><?= $mo_ta ?></td>
-                    <td><img style="width:100px;height:150px;" src="../../../public/images/<?= $hinh_anh ?>" alt=""></td>
+                    <td><img style="width:100px;height:100px;" src="../../../public/images/<?= $hinh_anh ?>" alt=""></td>
                     <td><?= $name_dm ?></td>
                     <td>
+                        <?php
+                        if ($mau_sac == 0) {
+                            echo "Đen";
+                        } elseif ($mau_sac == 1) {
+                            echo "Bạc";
+                        } elseif ($mau_sac == 2) {
+                            echo "Xám";
+                        } elseif ($mau_sac == 3) {
+                            echo "Nâu";
+                        }
+                        ?>
+                    </td>
+                    <td><?= $kich_thuoc ?></td>
+                    <td><?= $chat_lieu ?></td>
+                    <td><?= $bao_hanh ?></td>
+                    <td>
                         <a href="index.php?act=editsp&id_edit=<?= $id_sp ?>"><button class="btn btn-warning">Sửa</button></a>
-                        <a href="index.php?act=delete&iddl=<?= $id_sp; ?>"><button class="btn btn-danger">Xóa</button></a>
+                        <a href="index.php?act=deletesp&iddl=<?= $id_sp; ?>"><button class="btn btn-danger">Xóa</button></a>
                     </td>
 
                 </tr>

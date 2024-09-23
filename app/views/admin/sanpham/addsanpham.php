@@ -37,6 +37,28 @@
                     ?>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="mau_sac">Màu sắc</label>
+                <select class="form-control" required id="mau_sac" name="mau_sac">
+                    <option value="">Chọn màu sắc</option>
+                    <option value="0">Đen</option>
+                    <option value="1">Bạc</option>
+                    <option value="2">Xám</option>
+                    <option value="3">Nâu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Kích thước</label>
+                <input type="text" class="form-control" required id="exampleInputEmail1" name="kich_thuoc" placeholder="Nhập kích thước">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Chất liệu</label>
+                <input type="text" class="form-control" required id="exampleInputEmail1" name="chat_lieu" placeholder="Nhập chất liệu">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Bảo hành</label>
+                <input type="text" class="form-control" required id="exampleInputEmail1" name="bao_hanh" placeholder="Nhập bảo hành">
+            </div>
 
         </div>
         <!-- /.card-body -->
