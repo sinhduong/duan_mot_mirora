@@ -3,7 +3,6 @@
     include "../../models/AdminModel/sanpham.php";
     include "../../models/AdminModel/taikhoan.php";
     include "../../models/AdminModel/donhang.php";
-    include "../../models/AdminModel/chitietsanpham.php";
     include "../../models/AdminModel/binhluan.php";
     include "../../models/AdminModel/thongke.php";
     include "../../../config.php";
