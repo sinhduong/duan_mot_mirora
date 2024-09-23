@@ -10,13 +10,14 @@
             var roleSelect = document.getElementById("role_" + userId);
             var selectedRole = roleSelect.value;
 
-            // Gửi AJAX request để cập nhật vai trò
+            // Gửi AJAX request để cập nhật vai trò qua `index.php`
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "update_role.php", true); // Trang xử lý update vai trò
+            xhr.open("POST", "index.php?act=edittk", true); // Sử dụng `index.php` để xử lý update vai trò
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     alert("Cập nhật vai trò thành công!"); // Thông báo khi cập nhật thành công
+                    location.reload(); // Reload lại trang để cập nhật giao diện
                 }
             };
             xhr.send("id=" + userId + "&vai_tro=" + selectedRole);
@@ -78,22 +79,5 @@
         </tbody>
     </table>
 </body>
-<script>
-    function updateRole(userId) {
-        var roleSelect = document.getElementById("role_" + userId);
-        var selectedRole = roleSelect.value;
-
-        // Gửi AJAX request để cập nhật vai trò
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "update_role.php", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                alert("Cập nhật vai trò thành công!"); // Thông báo khi cập nhật thành công
-            }
-        };
-        xhr.send("id=" + userId + "&vai_tro=" + selectedRole);
-    }
-</script>
 
 </html>

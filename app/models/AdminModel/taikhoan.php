@@ -16,6 +16,7 @@ function update_taikhoan($id, $name, $ho_ten, $email, $dia_chi, $avt, $pass, $ph
     $sql = "UPDATE `tai_khoan` SET `name`='$name',`ho_ten`='$ho_ten',`email`='$email',`dia_chi`='$dia_chi',`avt`='$avt',`pass`='$pass',`phone`='$phone',`vai_tro`='$vai_tro' WHERE id='$id'";
     pdo_execute($sql);
 }
+
 function select_onetk()
 {
     $id = $_GET['id_edit'];
