@@ -1,10 +1,10 @@
 </div>
 </div>
 <footer class="main-footer">
-    <strong>Copyright &copy; dự án một <a href="https://adminlte.io">Nhóm 10</a>.</strong>
-    DuongVanSinhNguyenHuuDanLeTheHuy
+    <strong>Copyright &copy; dự án một <a href="https://adminlte.io">Nhóm 5</a>.</strong>
+    DuongSinh TienDat TuTai
     <div class="float-right d-none d-sm-inline-block">
-      <b>FPOLY</b> FAL23
+      <b>FPOLY</b> FALSE 2024
     </div>
   </footer>
 
