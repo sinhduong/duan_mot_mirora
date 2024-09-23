@@ -37,7 +37,7 @@
                     <td><?= $name_dm ?></td>
                     <td>
                         <a href="index.php?act=editsp&id_edit=<?= $id_sp ?>"><button class="btn btn-warning">Sửa</button></a>
-                        <a href="index.php?act=delete&iddl=<?= $id_sp; ?>"><button class="btn btn-danger">Xóa</button></a>
+                        <a href="index.php?act=deletesp&iddl=<?= $id_sp; ?>"><button class="btn btn-danger">Xóa</button></a>
                     </td>
 
                 </tr>

@@ -242,40 +242,11 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon"></i>
                 <p>
-                  Chi tiết sản phẩm
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="index.php?act=addctsanpham" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Thêm chi tiết sản phẩm</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="index.php?act=allctsanpham&table=chi_tiet_san_pham" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Tất chi tiết sản phẩm</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon"></i>
-                <p>
                   Tài khoản
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="index.php?act=addtaikhoan" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Tạo tài khoản</p>
-                  </a>
-                </li>
                 <li class="nav-item">
                   <a href="index.php?act=alltaikhoan&table=tai_khoan" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
