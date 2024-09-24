@@ -123,37 +123,30 @@
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="userID">
                                             <?php
-                                            // Kiểm tra xem session 'id' có tồn tại và không rỗng hay không
+                                            // var_dump($_SESSION['taikhoan']);
+                                            // die();
                                             if (!isset($_SESSION['taikhoan'])) {
-                                                // Nếu không có session 'id', người dùng là khách hàng
                                             ?>
                                                 <a class="dropdown-item" href="index.php?redirect=dangky">ĐĂNG KÝ</a>
                                                 <a class="dropdown-item" href="index.php?redirect=dangnhap">ĐĂNG NHẬP</a>
-                                               
-                                                <?php
+                                            <?php
                                             } else {
-                                                // Nếu có session 'id', kiểm tra vai trò của người dùng
-                                                if (($_SESSION['taikhoan']['vai_tro']) == 1 ) {
-                                                    // Nếu vai trò là 1 (quản trị viên), hiển thị nút ADMIN
+                                            ?>
+                                                <a class="dropdown-item" href="index.php?redirect=dangxuat">ĐĂNG XUẤT</a>
+                                                <a class="dropdown-item" href="index.php?redirect=taikhoan">Tài khoản của tôi</a>
+                                                <?php
+                                                if ($_SESSION['taikhoan']['vai_tro'] == 1) {
                                                 ?>
-                                                    <a class="dropdown-item" href="index.php?redirect=dangxuat">ĐĂNG XUẤT</a>
-                                                    <a class="dropdown-item" href="index.php?redirect=donhang">Lịch sử đơn hàng</a>
-                                                    
                                                     <a class="dropdown-item" href="../../duanmot/app/views/admin/index.php">ADMIN</a>
-                                                <?php
-                                                } else {
-                                                    // Ngược lại, nếu vai trò không phải là 1, chỉ hiển thị đăng xuất
-                                                ?>
-                                                      <a class="dropdown-item" href="index.php?redirect=dangxuat">ĐĂNG XUẤT</a>
-                                                    <a class="dropdown-item" href="index.php?redirect=donhang">Lịch sử đơn hàng</a>
-                                                    
-                                                <?php
+                                            <?php
                                                 }
                                             }
                                             ?>
                                         </div>
-
                                     </div>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -190,24 +183,25 @@
                                     </li>
                                     <!-- <a href="" class="mini-cart-icon"></a> -->
                                     <li class="mini-cart-icon">
-                                    <div class="mini-cart mini-cart--1">
-                                        <a href="?redirect=giohang" class="mini-cart__dropdown-toggle bordered-icon" id="cartDropdown">
-                                            <i class="icon_cart_alt mini-cart__icon"></i>
-                                            <span style="font-size: 20px" class="header-action-num"><?php (isset($_SESSION['mycart'])) ? $mess = count($_SESSION['mycart']) : $mess = 0; echo $mess;?></span>
-                                            <span class="mini-cart__ammount">
-                                                <i class="fa fa-angle-down"></i>
-                                            </span>
-                                        </a>
-                                        <div class="mini-cart__dropdown-menu">
-                                            <div class="mini-cart__content" id="miniCart">
-                                                
-                                                <div class="mini-cart__btn">
-                                                    <a href="index.php?redirect=giohang" class="btn btn-fullwidth btn-style-1">Xem giỏ hàng</a>
-                                                    <a href="index.php?redirect=donhang" class="btn btn-fullwidth btn-style-1">Kiểm tra</a>
+                                        <div class="mini-cart mini-cart--1">
+                                            <a href="?redirect=giohang" class="mini-cart__dropdown-toggle bordered-icon" id="cartDropdown">
+                                                <i class="icon_cart_alt mini-cart__icon"></i>
+                                                <span style="font-size: 20px" class="header-action-num"><?php (isset($_SESSION['mycart'])) ? $mess = count($_SESSION['mycart']) : $mess = 0;
+                                                                                                        echo $mess; ?></span>
+                                                <span class="mini-cart__ammount">
+                                                    <i class="fa fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="mini-cart__dropdown-menu">
+                                                <div class="mini-cart__content" id="miniCart">
+
+                                                    <div class="mini-cart__btn">
+                                                        <a href="index.php?redirect=giohang" class="btn btn-fullwidth btn-style-1">Xem giỏ hàng</a>
+                                                        <a href="index.php?redirect=donhang" class="btn btn-fullwidth btn-style-1">Kiểm tra</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     </li>
                                 </ul>
                             </div>
@@ -230,24 +224,17 @@
                                     <li class="mainmenu__item  menu-item-has-children has-children">
                                         <a href="index.php" class="mainmenu__link">Mặt hàng</a>
                                         <ul class="sub-menu">
-                                           
-                                                <li><a href="index.php?redirect=spbanchay"> Sản phẩm bán chạy</a></li>
-                                                <li><a href="index.php?redirect=spdat"> Sản phẩm đắt</a></li>
-                                                <li><a href="index.php?redirect=spbanchay"> Sản phẩm hạt dẻ</a></li>
-                                            
+
+                                            <li><a href="index.php?redirect=spbanchay"> Sản phẩm bán chạy</a></li>
+                                            <li><a href="index.php?redirect=spdat"> Sản phẩm đắt</a></li>
+                                            <li><a href="index.php?redirect=spbanchay"> Sản phẩm hạt dẻ</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="mainmenu__item  menu-item-has-children has-children">
                                         <a href="index.php" class="mainmenu__link">Danh mục</a>
                                         <ul class="sub-menu">
-                                            <?php
-                                            $danhmuc = alldanhmuc();
-                                            foreach ($danhmuc as $row) :
-                                                extract($row); ?>
-                                                <li><a href="index.php?redirect=sptheodm&id=<?= $id ?>"><?= $name ?></a></li>
-                                            <?php
-                                            endforeach;
-                                            ?>
+
                                         </ul>
                                     </li>
                                     <li class="mainmenu__item">
