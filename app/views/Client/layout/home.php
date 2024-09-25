@@ -99,11 +99,11 @@
                                                                 <i class="fa fa-star theme-star"></i>
                                                                 <i class="fa fa-star theme-star"></i>
                                                                 <i class="fa fa-star theme-star"></i>
-                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star theme-star"></i>
                                                             </span>
                                                         </div>
                                                         <p>
-                                                            <?= $mo_ta ?>
+
                                                         </p>
                                                         <form action="index.php?redirect=themgiohang" method="post">
                                                             <div class="product-action">
@@ -118,7 +118,7 @@
                                                                 <input type="hidden" name="gia" value="<?= $gia ?>">
                                                                 <input type="number" name="soluong" min="1" max="10" value="1">
 
-                                                                <a class="same-action compare-mrg" data-bs-toggle="modal"  href="">
+                                                                <a class="same-action compare-mrg" data-bs-toggle="modal" href="">
                                                                     <i class="fa fa-sliders fa-rotate-90"></i>
                                                                 </a>
                                                             </div>
@@ -169,11 +169,11 @@
                                                                 <i class="fa fa-star theme-star"></i>
                                                                 <i class="fa fa-star theme-star"></i>
                                                                 <i class="fa fa-star theme-star"></i>
-                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star theme-star"></i>
                                                             </span>
                                                         </div>
                                                         <p>
-                                                            <?= $mo_ta ?>
+                                                         
                                                         </p>
                                                         <form action="index.php?redirect=themgiohang" method="post">
                                                             <div class="product-action">
@@ -188,7 +188,7 @@
                                                                 <input type="hidden" name="gia" value="<?= $gia ?>">
                                                                 <input type="number" name="soluong" min="1" max="10" value="1">
 
-                                                                <a class="same-action compare-mrg" data-bs-toggle="modal"  href="">
+                                                                <a class="same-action compare-mrg" data-bs-toggle="modal" href="">
                                                                     <i class="fa fa-sliders fa-rotate-90"></i>
                                                                 </a>
                                                             </div>

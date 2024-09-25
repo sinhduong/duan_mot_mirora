@@ -16,7 +16,10 @@ function loadall_sanpham(){
                    san_pham.chat_lieu, 
                    san_pham.bao_hanh 
             FROM `san_pham`
-            JOIN danh_muc ON san_pham.iddm = danh_muc.id";
+            JOIN danh_muc ON san_pham.iddm = danh_muc.id
+            ORDER BY san_pham.id ASC
+            ";
+            
     $result = pdo_query($sql);
     return $result;
 }

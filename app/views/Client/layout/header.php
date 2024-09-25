@@ -137,7 +137,7 @@
                                                 <?php
                                                 if ($_SESSION['taikhoan']['vai_tro'] == 1) {
                                                 ?>
-                                                    <a class="dropdown-item" href="../../duanmot/app/views/admin/index.php">ADMIN</a>
+                                                    <a class="dropdown-item" href="../../mirora-watch_duan1/app/views/admin/index.php">ADMIN</a>
                                             <?php
                                                 }
                                             }

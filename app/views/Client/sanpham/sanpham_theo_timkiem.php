@@ -4,12 +4,12 @@
             <div class="product-carousel-group">
          
                 <?php
-                $tk_sanpham = timKiemTheoTen();
-                if(empty($tk_sanpham)):
-                    echo '<img style="width:1200px;height:600px" class="img-fluid" src="public/images/no-result.jpg">';
-                else:
-                    foreach($tk_sanpham as $tt):
-                        extract($tt);
+                // $tk_sanpham = timKiemTheoTen();
+                // if(empty($tk_sanpham)):
+                //     echo '<img style="width:1200px;height:600px" class="img-fluid" src="public/images/no-result.jpg">';
+                // else:
+                //     foreach($tk_sanpham as $tt):
+                //         extract($tt);
                         
                         
                         
@@ -61,8 +61,8 @@
                     </div>
                 </div>
                 <?php
-                  endforeach;
-                endif;
+                //   endforeach;
+                // endif;
                 ?>
             </div>
             

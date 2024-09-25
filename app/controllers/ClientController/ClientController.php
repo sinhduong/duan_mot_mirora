@@ -48,7 +48,20 @@ if (isset($_GET['redirect'])) {
 
             echo "<script>window.location.href='index.php';</script>";
             break;
+
+
+            // Sản phẩm
+        case 'chitietsanpham':
+            if(isset($_GET['id'])){
+                $id=$_GET['id'];
+                $load_one_sp=load_one_spct($id);
+                $sanpham=product_detail($id);
+
+            }
+            $load_all_sp=all_ct_sanpham();
+            include "app/views/Client/sanpham/chitietsanpham.php";
+            break;
     }
 } else {
-    // include "app/views/Client/layout/home.php";
+    include "app/views/Client/layout/home.php";
 }
