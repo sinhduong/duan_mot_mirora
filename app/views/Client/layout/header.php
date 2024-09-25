@@ -134,6 +134,7 @@
                                             ?>
                                                 <a class="dropdown-item" href="index.php?redirect=dangxuat">ĐĂNG XUẤT</a>
                                                 <a class="dropdown-item" href="index.php?redirect=taikhoan">Tài khoản của tôi</a>
+                                                <a class="dropdown-item" href="index.php?redirect=giohang">Giỏ hàng</a>
                                                 <?php
                                                 if ($_SESSION['taikhoan']['vai_tro'] == 1) {
                                                 ?>

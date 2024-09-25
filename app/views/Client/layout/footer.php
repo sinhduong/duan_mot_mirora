@@ -9,7 +9,7 @@
                                 <div class="footer-widget">
                                     <h3 class="widget-title">Về Mirora</h3>
                                     <div class="widget-content mb--20">
-                                        <p>Địa chỉ: nhổn, nam từ liêm, hà nội <br> CA 12345 - VN.</p>
+                                        <p>Địa chỉ: Cầu giấy, hà nội <br> CA 12345 - VN.</p>
                                         <p>Phone: 0865642497</p>
                                         <p>Fax: 0398685642</p>
                                         <p>Email: sinhduong1508@gmail.com</p>
@@ -143,7 +143,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <p class="copyright-text">&copy; Mirora Copyright 2023 <i class="fa fa-heart"></i> BY <a href="">NHÓM 10</a> </p>
+                                <p class="copyright-text">&copy; Mirora Copyright 2924 <i class="fa fa-heart"></i> BY <a href="">NHÓM 5</a> </p>
                                 <img src="assets/img/others/payment.png" alt="payment">
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                 <a class="scroll-to-top" href="#"><i class="fa fa-angle-double-up"></i></a>
                 <!-- Scroll To Top End -->
 
-             
+
 
                 <!-- Modal Start -->
                 <div class="modal fade product-modal" id="productModal" tabindex="-1" role="dialog" aria-hidden="true">
