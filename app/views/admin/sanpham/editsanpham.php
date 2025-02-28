@@ -42,6 +42,32 @@ extract($editsp);
                 </select>
             </div>
         </div>
+        <div class="form-group">
+            <label for="mau_sac">Màu sắc</label>
+            <select class="form-control" required id="mau_sac" name="mau_sac">
+                <option value="">Chọn màu sắc</option>
+                <option value="0" <?= $mau_sac == "0" ? 'selected' : '' ?>>Đen</option>
+                <option value="1" <?= $mau_sac == "1" ? 'selected' : '' ?>>Bạc</option>
+                <option value="2" <?= $mau_sac == "2" ? 'selected' : '' ?>>Xám</option>
+                <option value="3" <?= $mau_sac == "3" ? 'selected' : '' ?>>Nâu</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="kich_thuoc">Kích thước</label>
+            <input type="text" class="form-control" required id="kich_thuoc" name="kich_thuoc" value="<?= $kich_thuoc ?>" placeholder="Nhập kích thước">
+        </div>
+
+        <div class="form-group">
+            <label for="chat_lieu">Chất liệu</label>
+            <input type="text" class="form-control" required id="chat_lieu" name="chat_lieu" value="<?= $chat_lieu ?>" placeholder="Nhập chất liệu">
+        </div>
+
+        <div class="form-group">
+            <label for="bao_hanh">Bảo hành</label>
+            <input type="text" class="form-control" required id="bao_hanh" name="bao_hanh" value="<?= $bao_hanh ?>" placeholder="Nhập bảo hành">
+        </div>
+
         <div class="card-footer">
             <button type="submit" name="capnhat" class="btn btn-primary">Cập nhật</button>
         </div>
